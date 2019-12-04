@@ -1,0 +1,77 @@
+﻿@model IEnumerable<CheapAwesomeTravel.Models.HotelDetails>
+
+@{
+    ViewData["Title"] = "Hotels";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hotels</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Hotel Name
+                @*@Html.DisplayNameFor(model => model.HotelName)*@
+            </th>
+            <th>
+                Board Type
+                @*@Html.DisplayNameFor(model => model.BoardType)*@
+            </th>
+            <th>
+                Rate Type
+                @*@Html.DisplayNameFor(model => model.RateType)*@
+            </th>
+            <th>
+                No of Nights
+                @*@Html.DisplayNameFor(model => model.Nights)*@
+            </th>
+            <th>
+                Total Price
+                @*@Html.DisplayNameFor(model => model.Price)*@
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ var rowColor = "D9E6C4"; }
+        @{ var i = 0; }
+        @foreach (var item in Model)
+        {
+            if (i % 2 == 0)
+            {
+                rowColor = "#D9E6C4";
+            }
+            else
+            {
+                rowColor = "#ffffff";
+            }
+            i++;
+            <tr style="background-color:@rowColor;">
+                <td>
+                    @Html.DisplayFor(modelItem => item.HotelName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BoardType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RateType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nights)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                @*<td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>*@
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a asp-action="Index"><img src="~/images/Back.png" width="50" height="50" title="Back to Search" alt="Back to Search" /></a>
+</div>

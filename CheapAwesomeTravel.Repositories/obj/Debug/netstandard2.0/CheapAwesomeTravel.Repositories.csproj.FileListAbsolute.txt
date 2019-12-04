@@ -1,0 +1,9 @@
+D:\Temp\CheapAwesomeTravel_Arnab\CheapAwesomeTravel.Repositories\bin\Debug\netstandard2.0\CheapAwesomeTravel.Repositories.deps.json
+D:\Temp\CheapAwesomeTravel_Arnab\CheapAwesomeTravel.Repositories\bin\Debug\netstandard2.0\CheapAwesomeTravel.Repositories.dll
+D:\Temp\CheapAwesomeTravel_Arnab\CheapAwesomeTravel.Repositories\obj\Debug\netstandard2.0\CheapAwesomeTravel.Repositories.csprojAssemblyReference.cache
+D:\Temp\CheapAwesomeTravel_Arnab\CheapAwesomeTravel.Repositories\obj\Debug\netstandard2.0\CheapAwesomeTravel.Repositories.csproj.CoreCompileInputs.cache
+D:\Temp\CheapAwesomeTravel_Arnab\CheapAwesomeTravel.Repositories\obj\Debug\netstandard2.0\CheapAwesomeTravel.Repositories.AssemblyInfoInputs.cache
+D:\Temp\CheapAwesomeTravel_Arnab\CheapAwesomeTravel.Repositories\obj\Debug\netstandard2.0\CheapAwesomeTravel.Repositories.AssemblyInfo.cs
+D:\Temp\CheapAwesomeTravel_Arnab\CheapAwesomeTravel.Repositories\bin\Debug\netstandard2.0\CheapAwesomeTravel.Repositories.pdb
+D:\Temp\CheapAwesomeTravel_Arnab\CheapAwesomeTravel.Repositories\obj\Debug\netstandard2.0\CheapAwesomeTravel.Repositories.dll
+D:\Temp\CheapAwesomeTravel_Arnab\CheapAwesomeTravel.Repositories\obj\Debug\netstandard2.0\CheapAwesomeTravel.Repositories.pdb

@@ -1,0 +1,49 @@
+﻿@model CheapAwesomeTravel.Models.Tour
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search Your Hotels</h2>
+
+@*<h4>Tour</h4>*@
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Search" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DestinationId" class="control-label">Select Destination ID</label>
+                @*<input asp-for="DestinationId" class="form-control" />*@
+                <select asp-for="DestinationId" class="form-control">
+                    <option value="">Select</option>
+                    <option value="279">Destination 1</option>
+                    <option value="1419">Destination 2</option>
+                </select>
+                <span asp-validation-for="DestinationId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nights" class="control-label">Enter No of Nights</label>
+                <input asp-for="Nights" class="form-control" />
+                <span asp-validation-for="Nights" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="Code" class="control-label">Enter Authentication Code</label>
+                <input asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@*<div>
+        <a asp-action="Index">Back to List</a>
+    </div>*@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
